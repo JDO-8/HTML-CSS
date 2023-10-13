@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--no parametro action da tag form, informar o arquivo e a linguagem para onde vai ser direcionada a informação-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <!--Todo Formulário deve conter labels-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="some" id="isobrenome"> </p>
+        <p><input type="submit" value="Enviar"></p>
+
+        <!--Existem dois métodos para envio de formulário: GET(padrão, motra os dados do formulario na url) e POST(Não aparece na URL) -->
+
+    </form>
+</body>
+</html>
